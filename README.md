@@ -1,5 +1,5 @@
 # bluedit
-A reddit clone.
+A Reddit clone.
 
 Tools/Technologies used:
 - PostgresSQL
