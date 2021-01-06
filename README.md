@@ -1,4 +1,4 @@
-# bluedit
+# bluedit [![CodeFactor](https://www.codefactor.io/repository/github/ayushsharma255/bluedit/badge)](https://www.codefactor.io/repository/github/ayushsharma255/bluedit)
 A Reddit clone.
 
 Tools/Technologies used:
