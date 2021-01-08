@@ -54,7 +54,10 @@ ROOT_URLCONF = 'bluedit.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [BASE_DIR / 'templates']
+        'DIRS': [
+            # Get all template directories (that are named "templates") that are subdirectories of subdirectories of BASE_DIR
+            os.path.join(BASE_DIR, _dir, "templates") for _dir in os.listdir(BASE_DIR) if os.path.isdir(os.path.join(BASE_DIR, _dir)) and os.path.exists(os.path.join(BASE_DIR, _dir, "templates"))
+        ]
         ,
         'APP_DIRS': True,
         'OPTIONS': {
